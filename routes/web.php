@@ -45,6 +45,6 @@ Route::get('/name', 'StudentController@get_name');
 Route::get('/date', 'StudentController@get_date_of_birth');
 Route::get('/age', 'StudentController@get_age');
 
-Route::get('/akzhan', function () {
+Route::get('/shaptay', function () {
     return view('akzhanshaptay');
 });
