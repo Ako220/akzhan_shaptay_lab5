@@ -12,10 +12,10 @@ class StudentController extends Controller
     }
 
     public function get_date_of_birth() {
-        return view('dateOfBirth',["dateOfBirth"=>'25.01.2010']);
+        return view('dateOfBirth')->with("dateOfBirth",'25.01.2010');
     }
 
-    public function get_age() {
-        return view('age',["age"=>11]);
+    public function get_age($age) {
+        return view('age', compact('age'));
     }
 }
